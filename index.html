@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carteirinha</title>
+
+<!-- Font Awesome (ícones) -->
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f2f5f8;
+        color: #333;
+    }
+
+    .page {
+        max-width: 420px;
+        margin: auto;
+        background: #fff;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+}
+
+    /* Cabeçalho */
+    .header {
+    width: 100%;
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+
+    display: flex;
+    align-items: center;              /* alinha verticalmente */
+    justify-content: space-between;   /* empurra para as pontas */
+    box-sizing: border-box;
+}
+
+
+    .header img {
+    height: 32px;   /* diminui aqui */
+    width: auto;    /* mantém proporção */
+}
+
+    /* Título */
+    .title {
+        text-align: center;
+        color: #2a8dbf;
+        font-size: 22px;
+        margin: 25px 0 15px;
+    }
+
+    /* Caixa azul */
+    .info-box {
+        background-color: #d9edf7;
+        color: #31708f;
+        padding: 15px;
+        margin: 0 15px 20px;
+        border-radius: 4px;
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    /* Formulário */
+    .form {
+        margin: 0 15px 25px;
+    }
+
+    .form label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 6px;
+    }
+
+    .form input {
+        width: 100%;
+        padding: 10px;
+        font-size: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 10px;
+    }
+
+    .form button {
+        background-color: #5bc0de;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    /* Status */
+    .status {
+        text-align: center;
+        margin: 25px 0 15px;
+    }
+
+    .status-icon {
+        width: 70px;
+        height: 80px;
+        background-color: #5cb85c;
+        border-radius: 50%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 38px;
+        
+    }
+
+
+
+
+    .status-text {
+        margin-top: 10px;
+        font-weight: bold;
+        color: #3c763d;
+        font-size: 18px;
+    }
+
+    /* Card do aluno */
+    .card {
+        border: 1px solid #ddd;
+        margin: 15px;
+        padding: 12px;
+        display: flex;
+        gap: 10px;
+    }
+
+    .card img {
+        width: 80px;
+        height: 100px;
+        border: 1px solid #ccc;
+        object-fit: cover;
+    }
+
+    .card-info {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .card-info strong {
+        font-weight: bold;
+    }
+
+    /* Rodapé com ícones */
+   
+
+    .footer-item {
+        text-align: center;
+        color: #2a8dbf;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+    .footer-item i {
+        font-size: 26px;
+        display: block;
+        margin-bottom: 6px;
+    }
+
+    /* Box azul interna (fosca) */
+.actions-box {
+    margin: 15px;
+    background-color: #eef5fb; /* azul fosco */
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-around;
+    padding: 18px 0;
+}
+
+/* Itens */
+.action-item {
+    text-align: center;
+    color: #2a8dbf;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.action-item i {
+    font-size: 26px;
+    display: block;
+    margin-bottom: 6px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="page">
+
+    
+
+    <!-- Cabeçalho -->
+   <div class="header">
+    <img src="Logo_Unicesumar.jpg" alt="UniCesumar" class="logo-left">
+    <img src="Lupa_Imagem.png" alt="Pesquisar" class="logo-right">
+</div>
+
+    <!-- Título -->
+    <div class="title">carteirinha</div>
+
+    <!-- Caixa azul -->
+    <div class="info-box">
+        Para validar a carteirinha de estudante, digite no campo abaixo o código de validação
+        impresso no verso da carteirinha.
+    </div>
+
+    <!-- Formulário -->
+    <div class="form">
+        <label>Código de Validação:</label>
+        <input type="text" value="1729983816459-18">
+        <button>Validar</button>
+    </div>
+
+    <!-- Status -->
+    <div class="status">
+       <div class="status-icon">
+    <img src="Valida_Carteirinha.png" alt="Carteirinha válida">
+</div>
+        <div class="status-text">CARTEIRINHA VÁLIDA</div>
+    </div>
+
+    <!-- Dados do aluno -->
+    <div class="card">
+        <img src="https://via.placeholder.com/80x100">
+        <div class="card-info">
+            <strong>RA:</strong> 22185685-5<br>
+            <strong>Aluno:</strong> Gabriel Teixeira Pedroso<br>
+            <strong>Curso:</strong> Graduação em Educação Fisica<br>
+            <strong>Validade:</strong> 27/03/2026
+        </div>
+    </div>
+
+   <div class="actions-box">
+    <div class="action-item">
+        <i class="fa-solid fa-location-dot"></i>
+        <span>Onde Estudar</span>
+    </div>
+
+    <div class="action-item">
+        <i class="fa-solid fa-phone"></i>
+        <span>Atendimento</span>
+    </div>
+</div>
+
+
+</div>
+
+</body>
+</html>
